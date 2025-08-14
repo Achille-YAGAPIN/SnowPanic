@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://blqcsx6hosf1l"]
+
+[ext_resource type="Script" uid="uid://tfp80k8a1flb" path="res://main.gd" id="1_lquwl"]
+[ext_resource type="PackedScene" uid="uid://ft8j0t30py31" path="res://player.tscn" id="4_7mycd"]
+[ext_resource type="Script" uid="uid://yji8k11ohtx4" path="res://user_interface.gd" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://b16drllnycsgx" path="res://ennemi_manager.gd" id="5_lquwl"]
+
+[sub_resource type="Theme" id="Theme_lquwl"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_lquwl"]
+load_path = "res://.godot/imported/BackgroundSnowPanic.png-be2f7073574a2a9402edda6cb0debd6a.ctex"
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_lquwl")
+
+[node name="UserInterface" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme = SubResource("Theme_lquwl")
+script = ExtResource("4_lquwl")
+
+[node name="ScoreLabel" type="Label" parent="UserInterface"]
+layout_mode = 0
+offset_left = 261.0
+offset_top = 12.0
+offset_right = 354.0
+offset_bottom = 61.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+text = "Score: 0
+"
+
+[node name="ScoreTimer" type="Timer" parent="UserInterface"]
+wait_time = 5.0
+autostart = true
+
+[node name="Player" parent="." instance=ExtResource("4_7mycd")]
+z_index = 1
+
+[node name="EnnemiManager" type="Node" parent="."]
+script = ExtResource("5_lquwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(180, 320)
+scale = Vector2(4, 4)
+texture = SubResource("CompressedTexture2D_lquwl")
+
+[connection signal="timeout" from="UserInterface/ScoreTimer" to="UserInterface" method="_on_score_timer_timeout"]

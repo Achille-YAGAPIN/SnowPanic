@@ -1,0 +1,16 @@
+# (Ton contenu existant, comme giticore ou autres)
+
+# Godot-specific ignores
+*.import/
+export.cfg
+export_presets.cfg
+
+# System/tool-specific ignores
+*.swp
+*.bak
+~*
+.DS_Store
+
+# Godot 4+ specific ignores
+.godot/
+/android/

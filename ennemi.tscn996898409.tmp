@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwf0ffhur6p72"]
+
+[ext_resource type="Script" uid="uid://cla5rc5l7ylmf" path="res://ennemi.gd" id="1_5npyw"]
+[ext_resource type="Script" uid="uid://fkq26f73tv3y" path="res://sprite_2d_ennemi.gd" id="1_m0ij1"]
+
+[node name="Ennemi" type="RigidBody2D"]
+gravity_scale = 0.0
+script = ExtResource("1_5npyw")
+
+[node name="Sprite2DEnnemi" type="Sprite2D" parent="."]
+script = ExtResource("1_m0ij1")
+
+[node name="RespawnTimer" type="Timer" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
