@@ -1,16 +1,29 @@
-# (Ton contenu existant, comme giticore ou autres)
+# --- Godot specific ---
+# Imported resources and cache
+.import/
+.export/
+mono_crash.*
 
-# Godot-specific ignores
-*.import/
+# Export configs (regénérés automatiquement)
 export.cfg
 export_presets.cfg
 
-# System/tool-specific ignores
-*.swp
-*.bak
-~*
-.DS_Store
-
-# Godot 4+ specific ignores
+# Godot 4 project cache
 .godot/
-/android/
+
+# --- OS specific ---
+.DS_Store
+Thumbs.db
+
+# --- Editor / temporary files ---
+*.swp
+*.swo
+*.bak
+*.tmp
+~*
+
+# --- Build outputs ---
+# Si tu exportes tes builds dans un dossier "bin" ou "build", ignore-le :
+/bin/
+/build/
+/dist/

@@ -4,13 +4,13 @@
 [ext_resource type="Texture2D" uid="uid://cwcxq5xawqt6i" path="res://assets/SnowBall.png" id="2_1ta0d"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5npyw"]
-radius = 26.0
+radius = 38.0132
 
 [node name="Ennemi" type="Area2D"]
 position = Vector2(360, 640)
 script = ExtResource("1_a8sfv")
 
-[node name="Sprite2DEnnemi" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("2_1ta0d")
 

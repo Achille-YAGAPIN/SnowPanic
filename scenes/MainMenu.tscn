@@ -1,20 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://27n183j7d7bo"]
+[gd_scene load_steps=5 format=3 uid="uid://27n183j7d7bo"]
 
 [ext_resource type="Script" uid="uid://8np8tl7y47b7" path="res://scripts/MainMenu.gd" id="1_2wh52"]
 [ext_resource type="Texture2D" uid="uid://c8qwua4ajaqa7" path="res://assets/PlayButton.png" id="2_ow34m"]
 [ext_resource type="Texture2D" uid="uid://4jt5a8030141" path="res://assets/SnowPanic_title.png" id="3_l72w3"]
+[ext_resource type="Texture2D" uid="uid://fmdwsuifiseb" path="res://assets/BackgroundSnowPanic.png" id="4_ow34m"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_right = 360.0
+offset_bottom = 640.0
 script = ExtResource("1_2wh52")
-
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
 
 [node name="PlayButton" type="TextureButton" parent="."]
 layout_mode = 0
@@ -28,7 +24,13 @@ stretch_mode = 4
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 56.0
-offset_top = 300.0
+offset_top = 100.0
 offset_right = 304.0
-offset_bottom = 340.0
+offset_bottom = 140.0
 texture = ExtResource("3_l72w3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(180, 319)
+scale = Vector2(4, 4)
+texture = ExtResource("4_ow34m")
