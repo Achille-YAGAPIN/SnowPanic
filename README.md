@@ -1,34 +1,44 @@
-# 🎮 [Nom du jeu]
+# 🎮 Snow Panic
 
-Petit jeu réalisé avec **Godot Engine**.
+Jeu mobile de **course infinie** développé avec le moteur **Godot**.
 
 ## 🕹️ Description
-[Décris ton jeu en 2–3 phrases.
-Exemple : jeu 2D de plateforme où le joueur doit éviter des ennemis et atteindre la sortie.]
+
+Perdu en pleine montagne, un pingouin un peu trop courageux doit survivre à une avalanche… de **boules de neige enragées** ❄️
+
+Swipe à droite, swipe à gauche : plus tu esquives, plus ton score grimpe… mais attention, **la montagne n’a aucune pitié**.
 
 ## ▶️ Jouer au jeu
-👉 Télécharger l’APK ici :  
-[LIEN VERS LA RELEASE GITHUB ou ITCH.IO]
 
-> Compatible Android
+👉 **Télécharger l’APK (Android)** :
+[https://github.com/Achille-YAGAPIN/SnowPanic/releases/tag/v1.0.0](https://github.com/Achille-YAGAPIN/SnowPanic/releases/tag/v1.0.0)
+
+> 📱 Compatible Android
 
 ## 🛠️ Technologies
-- Godot [3.x / 4.x]
-- GDScript
 
-## 🚀 Lancer le projet en local
-1. Installer Godot
-2. Ouvrir le fichier `project.godot`
-3. Cliquer sur ▶️ Play
+* **Godot 4.5.1**
+* **GDScript**
 
-## 📦 État du projet
-- [x] Jeu jouable
-- [ ] Sons
-- [ ] Améliorations futures
+## 🚀 Lancer le jeu
 
-## 📸 Screenshots
-*(optionnel mais recommandé)*  
-Ajoute ici quelques images du jeu.
+### ▶️ Jouer directement (Android)
 
-## 📄 Licence
-[MIT / GPL / Pas encore définie]
+1. Télécharger l’APK via le lien ci-dessus
+2. Installer l’APK sur votre téléphone Android
+3. Lancer le jeu 🎉
+
+### 🧩 Ouvrir le projet dans Godot
+
+1. Télécharger le **code source** du projet (dossier ZIP)
+2. Dézipper le dossier
+3. Ouvrir le logiciel Godot
+4. Cliquer sur **Import** puis sélectionner le fichier `project.godot`
+5. Cliquer sur ▶️ **Play** pour lancer le jeu
+
+## 📌 Remarques
+
+* Le projet est prévu principalement pour mobile (Android)
+* Les contrôles sont basés sur des **gestes de swipe**
+
+Bon jeu 🐧❄️
