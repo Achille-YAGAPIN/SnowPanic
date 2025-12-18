@@ -1,7 +1,12 @@
 extends Control
 
-func _ready():
-	$PlayButton.pressed.connect(_on_PlayButton_pressed)
-	
-func _on_PlayButton_pressed():
+@onready var play_button: TextureButton = $PlayButton
+
+func _ready() -> void:
+	play_button.pressed.connect(_on_play_pressed)
+
+func _on_play_pressed() -> void:
+	start_game()
+
+func start_game() -> void:
 	get_tree().change_scene_to_file("res://scenes/main.tscn")
